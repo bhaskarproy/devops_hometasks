@@ -1,0 +1,8 @@
+- name: update httpd.conf
+  blockinfile:
+    path: /etc/httpd/conf/httpd.conf
+    block: |
+      <Directory /var/www/html/app>
+       DirectoryIndex index.php
+      </Directory>
+  notify: restart apache service

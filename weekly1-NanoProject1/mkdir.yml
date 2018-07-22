@@ -1,0 +1,6 @@
+- name: Creates directory
+  file:
+    path: /opt/app/release
+    state: directory
+    mode: 0775
+    recurse: yes

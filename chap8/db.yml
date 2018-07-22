@@ -1,0 +1,6 @@
+---
+  - name: setting mysql database
+    hosts: db
+    become: true
+    roles:
+      - { role: geerlingguy.mysql }

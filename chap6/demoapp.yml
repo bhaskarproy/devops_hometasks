@@ -1,0 +1,7 @@
+---
+  - name: create demo app
+    hosts: app
+    become: true
+    roles:
+      - frontend
+      
